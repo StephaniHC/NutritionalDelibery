@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj": {}
+    "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\git\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj": {
+    "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\git\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\git\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj",
         "projectName": "NutritionalDelibery.Domain",
-        "projectPath": "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj",
+        "projectPath": "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\git\\NutritionalDelibery\\NutritionalDelibery.Domain\\NutritionalDelibery.Domain.csproj",
         "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\NutritionalDelibery\\NutritionalDelibery.Domain\\obj\\",
+        "outputPath": "C:\\Users\\steph\\Documents\\DiploNur\\PresentacionFinal\\git\\NutritionalDelibery\\NutritionalDelibery.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

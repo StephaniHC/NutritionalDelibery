@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NutritionalDelibery.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b650084323bea72bcd00d09724a61d607f51089")]
 [assembly: System.Reflection.AssemblyProductAttribute("NutritionalDelibery.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NutritionalDelibery.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

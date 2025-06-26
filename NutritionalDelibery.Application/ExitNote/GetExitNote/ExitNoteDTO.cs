@@ -17,6 +17,5 @@ namespace NutritionalDelibery.Application.ExitNoteDetail1.GetExitNote
         public DateTime ExitDate { get; set; }
         public Guid DeliveryPersonId { get; set; }
 
-        public virtual ICollection<ExitNoteDetailDTO> ExitNoteDetails { get; set; }
     }
 }

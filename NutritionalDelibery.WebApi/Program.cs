@@ -13,9 +13,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "Delinery Nutrition Microservice",
-        Version = "v3.0",
-        Description = "API para administrar elenvio de comidas"
+        Title = "Delibery Nutrition Microservice",
+        Version = "v1.0",
+        Description = "API para administrar el envio de comidas"
     });
 });
 

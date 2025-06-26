@@ -7,6 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace NutritionalDelibery.Application.DeliveryRoute.GetDeliveryRoute
-{ 
+{
     public record GetDeliveryRouteQuery(string SearchTerm) : IRequest<IEnumerable<DeliveryRouteDTO>>;
 }

@@ -14,7 +14,6 @@ namespace NutritionalDelibery.Application.ExitNote.GetExitNoteDetail
         public Guid Id { get; set; } 
         public int Quantity { get; set; } 
         public Guid PackageId { get; set; } 
-        public int ExitNoteNumber { get; set; } 
-        public virtual ExitNoteDTO ExitNote { get; set; }
+        public int ExitNoteNumber { get; set; }  
     }
 }

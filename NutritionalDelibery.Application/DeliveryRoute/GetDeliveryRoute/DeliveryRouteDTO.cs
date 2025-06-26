@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NutritionalDelibery.Application.DeliveryRoute.GetDeliveryRoute
 {
-    public class ExitNoteDTODeliveryRouteDTO
+    public class DeliveryRouteDTO
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

@@ -26,8 +26,6 @@ namespace NutritionalDelibery.Infrastructure.StoredModel.Entities
         [Required]
         [Column("ExitNoteNumber")]
         public int ExitNoteNumber { get; set; }
-
-        [ForeignKey("ExitNote")]
-        public virtual ExitNoteStoredModel ExitNote { get; set; }
+         
     }
 }

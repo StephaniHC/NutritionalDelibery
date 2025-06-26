@@ -16,7 +16,6 @@ namespace NutritionalDelibery.Infrastructure.StoredModel.Entities
         [Column("Id")]
         public Guid Id { get; set; }
 
-        [Key]
         [Column("Number")]
         public int Number { get; set; }
 
@@ -32,7 +31,6 @@ namespace NutritionalDelibery.Infrastructure.StoredModel.Entities
         [Required]
         [Column("DeliveryPersonId")]
         public Guid DeliveryPersonId { get; set; }
-
-        public virtual ICollection<ExitNoteDetailStoredModel> ExitNoteDetails { get; set; }
+         
     }
 }

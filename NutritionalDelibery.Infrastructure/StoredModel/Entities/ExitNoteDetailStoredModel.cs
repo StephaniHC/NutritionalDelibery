@@ -24,8 +24,8 @@ namespace NutritionalDelibery.Infrastructure.StoredModel.Entities
         public Guid PackageId { get; set; }
 
         [Required]
-        [Column("ExitNoteNumber")]
-        public int ExitNoteNumber { get; set; }
+        [Column("ExitNoteId")]
+        public Guid ExitNoteId { get; set; }
          
     }
 }

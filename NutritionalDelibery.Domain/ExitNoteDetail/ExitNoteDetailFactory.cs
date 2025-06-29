@@ -8,9 +8,9 @@ namespace NutritionalDelibery.Domain.ExitNoteDetail
 {
     public class ExitNoteDetailFactory : IExitNoteDetailFactory
     {
-        public ExitNoteDetail Create(int quantity, Guid packageId, int exitNoteNumber)
+        public ExitNoteDetail Create(int quantity, Guid packageId, Guid exitNoteId)
         {
-            ExitNoteDetail exitNoteDetail = new ExitNoteDetail(quantity, packageId, exitNoteNumber);
+            ExitNoteDetail exitNoteDetail = new ExitNoteDetail(quantity, packageId, exitNoteId);
             return exitNoteDetail;
         }
     }

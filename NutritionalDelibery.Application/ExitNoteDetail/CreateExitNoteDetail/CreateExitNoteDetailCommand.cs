@@ -9,6 +9,6 @@ using System.Threading.Tasks;
 
 namespace NutritionalDelibery.Application.ExitNote.CreateExitNoteDetail
 {  
-    public record CreateExitNoteDetailCommand(int Quantity, Guid PackageId, int ExitNoteNumber) : IRequest<Guid>; 
+    public record CreateExitNoteDetailCommand(int Quantity, Guid PackageId, Guid ExitNoteId) : IRequest<Guid>; 
     
 }

@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36109.1
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutritionalDelibery.Test", "NutritionalDelibery.Test\NutritionalDelibery.Test.csproj", "{C9D295D9-1E3E-4170-9E20-B8EE98E59318}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutritionalDelibery.Infrastructure", "NutritionalDelibery.Infrastructure\NutritionalDelibery.Infrastructure.csproj", "{9E91DC9B-E7D8-4092-B94A-1781CF77265F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutritionalDelibery.Integration", "NutritionalDelibery.Integration\NutritionalDelibery.Integration.csproj", "{77DB775D-E8D0-4BB0-8A66-82F35542A6D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{9E91DC9B-E7D8-4092-B94A-1781CF77265F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E91DC9B-E7D8-4092-B94A-1781CF77265F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E91DC9B-E7D8-4092-B94A-1781CF77265F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77DB775D-E8D0-4BB0-8A66-82F35542A6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DB775D-E8D0-4BB0-8A66-82F35542A6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DB775D-E8D0-4BB0-8A66-82F35542A6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DB775D-E8D0-4BB0-8A66-82F35542A6D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

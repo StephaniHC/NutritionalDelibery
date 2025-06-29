@@ -28,7 +28,7 @@ namespace NutritionalDelibery.Infrastructure.Handlers
                 Id = e.Id,
                 Quantity = e.Quantity,
                 PackageId = e.PackageId,
-                ExitNoteNumber = e.ExitNoteNumber 
+                ExitNoteId = e.ExitNoteId
             }).
             ToListAsync(cancellationToken);
         }  

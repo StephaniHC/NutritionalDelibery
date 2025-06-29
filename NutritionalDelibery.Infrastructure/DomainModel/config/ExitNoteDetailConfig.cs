@@ -26,8 +26,8 @@ namespace NutritionalDelibery.Infrastructure.DomainModel.config
             builder.Property(x => x.PackageId)
                 .HasColumnName("PackageId");
 
-            builder.Property(x => x.ExitNoteNumber)
-                .HasColumnName("ExitNoteNumber"); 
+            builder.Property(x => x.ExitNoteId)
+                .HasColumnName("ExitNoteId"); 
         }
     }
 }

@@ -11,13 +11,13 @@ namespace NutritionalDelibery.Domain.ExitNoteDetail
     {
         public int Quantity { get; private set; }
         public Guid PackageId { get; private set; }
-        public int ExitNoteNumber { get; private set; }
+        public Guid ExitNoteId { get; private set; }
         //public virtual ExitNote ExitNote { get; private set; }
-        public ExitNoteDetail(int quantity, Guid packageId, int exitNoteNumber/*, ExitNote exitNote*/) : base(Guid.NewGuid())
+        public ExitNoteDetail(int quantity, Guid packageId, Guid exitNoteId/*, ExitNote exitNote*/) : base(Guid.NewGuid())
         {
             Quantity = quantity;
             PackageId = packageId;
-            ExitNoteNumber = exitNoteNumber;
+            ExitNoteId = exitNoteId;
         }
     }
 }

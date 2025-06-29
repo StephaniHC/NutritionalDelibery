@@ -27,7 +27,7 @@ namespace NutritionalDelibery.Application.ExitNote.CreateExitNoteDetail
 
         public async Task<Guid> Handle(CreateExitNoteDetailCommand request, CancellationToken cancellationToken)
         {
-            var exitNoteDetail = _exitNoteDetailFactory.Create(request.Quantity, request.PackageId, request.ExitNoteNumber);
+            var exitNoteDetail = _exitNoteDetailFactory.Create(request.Quantity, request.PackageId, request.ExitNoteId);
 
             await _exitNoteDetailRepository.AddAsync(exitNoteDetail);
 

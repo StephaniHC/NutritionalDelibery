@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # Servicio de tu aplicación .NET
   nutritional-delibery: 
-    image: cruzheredia/microservicio-nutritional-delibery:latest 
+    image: stephaniheredia/microservicio-nutritional-delibery:latest
     container_name: nutritional-delibery
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -21,7 +21,7 @@ services:
       - kong-net
   # Servicio de la base de datos postgresql
   postgres-db: 
-    image: cruzheredia/nutritionaldeliberydb:latest
+    image: stephaniheredia/nutritionaldeliberydb:latest
     container_name: nutritionaldelibery-db 
     environment:
       - POSTGRES_DB=nutritionalDelibery

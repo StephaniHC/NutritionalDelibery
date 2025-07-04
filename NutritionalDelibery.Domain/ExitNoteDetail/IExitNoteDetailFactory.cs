@@ -8,6 +8,6 @@ namespace NutritionalDelibery.Domain.ExitNoteDetail
 {
     public interface IExitNoteDetailFactory
     {
-        ExitNoteDetail Create(int quantity, Guid packageId, int exitNoteNumber);
+        ExitNoteDetail Create(int quantity, Guid packageId, Guid exitNoteId);
     }
 }

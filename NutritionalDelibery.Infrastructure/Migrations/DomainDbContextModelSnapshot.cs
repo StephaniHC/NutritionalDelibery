@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using NutritionalDelibery.Infrastructure.StoredModel;
+using NutritionalDelibery.Infrastructure.DomainModel;
 
 #nullable disable
 
 namespace NutritionalDelibery.Infrastructure.Migrations
 {
-    [DbContext(typeof(StoredDbContext))]
-    partial class StoredDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(DomainDbContext))]
+    partial class DomainDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -22,7 +22,7 @@ namespace NutritionalDelibery.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("NutritionalDelibery.Infrastructure.StoredModel.Entities.DeliveryNoteStoredModel", b =>
+            modelBuilder.Entity("NutritionalDelibery.Domain.DeliveryNote.DeliveryNote", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,14 +35,12 @@ namespace NutritionalDelibery.Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("character varying(500)")
+                        .HasColumnType("text")
                         .HasColumnName("Description");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("character varying(1000)")
+                        .HasColumnType("text")
                         .HasColumnName("ImagePath");
 
                     b.Property<Guid>("PacientId")
@@ -51,16 +49,15 @@ namespace NutritionalDelibery.Infrastructure.Migrations
 
                     b.Property<string>("State")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
+                        .HasColumnType("text")
                         .HasColumnName("State");
 
                     b.HasKey("Id");
 
-                    b.ToTable("DeliveryNote");
+                    b.ToTable("DeliveryNote", (string)null);
                 });
 
-            modelBuilder.Entity("NutritionalDelibery.Infrastructure.StoredModel.Entities.DeliveryRouteStoredModel", b =>
+            modelBuilder.Entity("NutritionalDelibery.Domain.DeliveryRoute.DeliveryRoute", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -85,16 +82,44 @@ namespace NutritionalDelibery.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("character varying(250)")
+                        .HasColumnType("text")
                         .HasColumnName("Name");
 
                     b.HasKey("Id");
 
-                    b.ToTable("DeliveryRoute");
+                    b.ToTable("DeliveryRoute", (string)null);
                 });
 
-            modelBuilder.Entity("NutritionalDelibery.Infrastructure.StoredModel.Entities.ExitNoteDetailStoredModel", b =>
+            modelBuilder.Entity("NutritionalDelibery.Domain.ExitNote.ExitNote", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("Id");
+
+                    b.Property<Guid>("DeliveryPersonId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("DeliveryPersonId");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("Description");
+
+                    b.Property<DateTime>("ExitDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("ExitDate");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("integer")
+                        .HasColumnName("Number");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ExitNote", (string)null);
+                });
+
+            modelBuilder.Entity("NutritionalDelibery.Domain.ExitNoteDetail.ExitNoteDetail", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -115,37 +140,7 @@ namespace NutritionalDelibery.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ExitNoteDetail");
-                });
-
-            modelBuilder.Entity("NutritionalDelibery.Infrastructure.StoredModel.Entities.ExitNoteStoredModel", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("Id");
-
-                    b.Property<Guid>("DeliveryPersonId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("DeliveryPersonId");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("character varying(500)")
-                        .HasColumnName("Description");
-
-                    b.Property<DateTime>("ExitDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("ExitDate");
-
-                    b.Property<int>("Number")
-                        .HasColumnType("integer")
-                        .HasColumnName("Number");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ExitNote");
+                    b.ToTable("ExitNoteDetail", (string)null);
                 });
 #pragma warning restore 612, 618
         }

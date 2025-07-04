@@ -26,4 +26,8 @@
     <ProjectReference Include="..\NutritionalDelibery.Integration\NutritionalDelibery.Integration.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

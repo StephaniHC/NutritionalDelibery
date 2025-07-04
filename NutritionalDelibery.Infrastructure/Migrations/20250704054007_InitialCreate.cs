@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace NutritionalDelibery.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateDatabase : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,10 +16,10 @@ namespace NutritionalDelibery.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Description = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
                     DeliveryDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    State = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    ImagePath = table.Column<string>(type: "character varying(1000)", maxLength: 1000, nullable: false),
+                    State = table.Column<string>(type: "text", nullable: false),
+                    ImagePath = table.Column<string>(type: "text", nullable: false),
                     PacientId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
@@ -32,7 +32,7 @@ namespace NutritionalDelibery.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Name = table.Column<string>(type: "character varying(250)", maxLength: 250, nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: false),
                     LatitudeOrigin = table.Column<double>(type: "double precision", nullable: false),
                     LongitudeOrigin = table.Column<double>(type: "double precision", nullable: false),
                     LatitudeDestination = table.Column<double>(type: "double precision", nullable: false),
@@ -49,7 +49,7 @@ namespace NutritionalDelibery.Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Number = table.Column<int>(type: "integer", nullable: false),
-                    Description = table.Column<string>(type: "character varying(500)", maxLength: 500, nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
                     ExitDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     DeliveryPersonId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
